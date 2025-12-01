@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dgumf2o5taxw1"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 736.0
+offset_right = 501.0
+offset_bottom = 767.0
+scale = Vector2(3, 3)
+text = "Start"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1272.0
+offset_top = 736.0
+offset_right = 1341.0
+offset_bottom = 767.0
+scale = Vector2(3, 3)
+text = "Quit
+"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 248.0
+offset_right = 904.0
+offset_bottom = 272.0
+scale = Vector2(3, 3)
+text = "Bonk A Harvey"

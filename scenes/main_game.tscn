@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7e27knpkifjw"]
+
+[ext_resource type="Script" uid="uid://6784884ru1ow" path="res://scripts/maingame.gd" id="1_s3esy"]
+
+[node name="MainGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s3esy")
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 152.0
+offset_right = 728.0
+offset_bottom = 336.0
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 152.0
+offset_right = 1024.0
+offset_bottom = 336.0
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1144.0
+offset_top = 152.0
+offset_right = 1328.0
+offset_bottom = 336.0
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 456.0
+offset_right = 728.0
+offset_bottom = 640.0
+
+[node name="Button5" type="Button" parent="."]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 456.0
+offset_right = 1024.0
+offset_bottom = 640.0
+
+[node name="Button6" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1144.0
+offset_top = 456.0
+offset_right = 1328.0
+offset_bottom = 640.0
+
+[node name="Button7" type="Button" parent="."]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 736.0
+offset_right = 728.0
+offset_bottom = 920.0
+
+[node name="Button8" type="Button" parent="."]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 736.0
+offset_right = 1024.0
+offset_bottom = 920.0
+
+[node name="Button9" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1144.0
+offset_top = 736.0
+offset_right = 1328.0
+offset_bottom = 920.0
