@@ -1,6 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7e27knpkifjw"]
+[gd_scene load_steps=4 format=3 uid="uid://c7e27knpkifjw"]
 
 [ext_resource type="Script" uid="uid://6784884ru1ow" path="res://scripts/maingame.gd" id="1_s3esy"]
+
+[sub_resource type="GDScript" id="GDScript_s3esy"]
+script/source = "extends RichTextLabel
+
+func _process(delta: float) -> void:
+	$\".\".text = \"Points: \" + str(Global.gPoints)
+	
+"
+
+[sub_resource type="GDScript" id="GDScript_72e8q"]
+script/source = "extends RichTextLabel
+
+func _process(delta: float) -> void:
+	$\".\".text = \"Remaining Time: \" + str(int($\"../Timer\".time_left))
+"
 
 [node name="MainGame" type="Control"]
 layout_mode = 3
@@ -82,3 +97,35 @@ offset_left = 1144.0
 offset_top = 736.0
 offset_right = 1328.0
 offset_bottom = 920.0
+
+[node name="Points" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 24.0
+offset_right = 160.0
+offset_bottom = 64.0
+scale = Vector2(3, 3)
+script = SubResource("GDScript_s3esy")
+
+[node name="TimerSTR" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 168.0
+offset_right = 187.0
+offset_bottom = 208.0
+scale = Vector2(3, 3)
+script = SubResource("GDScript_72e8q")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
